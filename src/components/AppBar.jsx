@@ -65,7 +65,7 @@ export default function myAppBar({ forceUpdate }) {
                                 >
                                     <Avatar
                                         sx={{ width: 32, height: 32 }}
-                                        src={auth.currentUser.photoURL}
+                                        src={auth.currentUser?.photoURL}
                                     >
                                         U
                                     </Avatar>

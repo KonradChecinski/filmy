@@ -53,7 +53,10 @@ export default function AddMovie({
                     seen: false,
                     uid: auth.currentUser.uid,
                 });
-                getMovieList(), handleClose();
+                getMovieList();
+                setTitle("");
+                setYear("");
+                handleClose();
             } catch (err) {
                 console.error(err);
             }

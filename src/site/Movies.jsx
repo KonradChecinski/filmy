@@ -103,7 +103,7 @@ export default function Movies({ forceUpdate }) {
             {toWatchMovieList.map((movie, index) => {
                 return (
                     <Movie
-                        key={index}
+                        key={movie.id}
                         movie={movie}
                         getMovieList={getMovieList}
                     />
